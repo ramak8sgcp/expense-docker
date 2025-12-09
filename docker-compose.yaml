@@ -16,9 +16,9 @@ services:
     depends_on:
       - mysql
   frontend:
-     image: ramak8sgcp/frontend:v1
-     container_name: frontend
-     ports:
-     - 80:80
-     depends_on:
-     - backend
+    image: ramak8sgcp/frontend:v1
+    container_name: frontend
+    ports:
+    - 80:80
+    depends_on:
+    - backend
