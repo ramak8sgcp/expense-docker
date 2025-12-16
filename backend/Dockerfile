@@ -12,7 +12,7 @@ RUN addgroup -S expense && adduser -S expense -G expense && \
     chown -R expense:expense /opt/server
 WORKDIR /opt/server
 COPY --from=builder /opt/server /opt/server
-# USER expense
+USER expense
 CMD [ "node", "index.js" ]
 
 
